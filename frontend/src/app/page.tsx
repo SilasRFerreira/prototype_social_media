@@ -1,4 +1,4 @@
-import HomeForm from "./homeForm"
+import HomeForm from "@/app/homeForm"
 
 const Home = () => {  
   

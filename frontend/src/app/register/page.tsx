@@ -1,4 +1,4 @@
-import RegisterForm from "./registerForm"
+import RegisterForm from "@/app/register/registerForm"
 
 
 const Register = () => {
