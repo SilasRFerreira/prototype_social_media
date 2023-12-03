@@ -1,6 +1,11 @@
+import RegisterForm from "./registerForm"
+
+
 const Register = () => {
     return(
-        <h1>Teste Register</h1>
+        <>            
+            <RegisterForm/>
+        </>
     )
 }
 

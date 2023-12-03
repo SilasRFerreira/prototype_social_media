@@ -1,8 +1,11 @@
+import HomeForm from "./homeForm"
 
-
-const Home = () => {
+const Home = () => {  
+  
   return(
-      <h1>Teste Home</h1>
+    <>      
+      <HomeForm/>
+    </>
   )
 }
 
