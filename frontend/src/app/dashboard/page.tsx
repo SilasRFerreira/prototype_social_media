@@ -1,6 +1,11 @@
+import Header from "@/components/header"
+
 const Dashboard = () => {
     return(
-        <h1>Teste Dashboard</h1>
+        <>
+            <Header/>
+            <h1>Teste Dashboard</h1>
+        </>
     )
 }
 
