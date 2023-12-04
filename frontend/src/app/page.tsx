@@ -1,4 +1,4 @@
-import HomeForm from "@/app/homeForm"
+import HomeForm from "@/app/home/homeForm"
 import Header from "@/components/header"
 
 

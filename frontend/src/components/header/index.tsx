@@ -1,3 +1,5 @@
+'use client'
+
 import HeaderNav from "./headerNav"
 
 export interface iHeader {
