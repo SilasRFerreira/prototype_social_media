@@ -2,10 +2,9 @@
 
 import Input from "@/components/input"
 import { SubmitHandler, useForm } from "react-hook-form"
-import { LoginForm, loginSchema } from "@/app/homeForm/LoginSchema"
+import { LoginForm, loginSchema } from "@/app/home/homeForm/LoginSchema"
 import { zodResolver } from '@hookform/resolvers/zod'
 import Link from "next/link"
-
 
 const HomeForm = () => {
   const { register, handleSubmit, formState: {errors}, reset } = useForm<LoginForm>({ resolver: zodResolver(loginSchema) }) 
@@ -13,7 +12,7 @@ const HomeForm = () => {
   const submit: SubmitHandler<LoginForm> = (formData: LoginForm) =>{
     console.log(formData)    
     reset()
-  } 
+  }   
   
   return(
       <form onSubmit={handleSubmit(submit)}>  
@@ -33,12 +32,11 @@ const HomeForm = () => {
             error={errors.password}
           />
         </div>
-        <div>
-          <button>Login</button>
+        <div>          
+          <Link href={'/dashboard'}>Login</Link>
           <p>Ainda não possui cadastro ?</p>
           <Link href={'/register'}>Cadastrar-se</Link>
         </div>
-
       </form>
   )
 }
