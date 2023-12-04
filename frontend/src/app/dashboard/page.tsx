@@ -1,6 +1,16 @@
+import Header from "@/components/header"
+import TopSection from "./topSection"
+import BottomSection from "./bottomSection"
+
 const Dashboard = () => {
     return(
-        <h1>Teste Dashboard</h1>
+        <>
+            <Header/>
+            <main className="">
+                <TopSection/>
+                <BottomSection/>
+            </main>
+        </>
     )
 }
 

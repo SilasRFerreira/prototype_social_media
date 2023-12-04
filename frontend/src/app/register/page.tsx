@@ -1,6 +1,13 @@
+import RegisterForm from "@/app/register/registerForm"
+import Header from "@/components/header"
+
+
 const Register = () => {
     return(
-        <h1>Teste Register</h1>
+        <>       
+            <Header location="register"/>     
+            <RegisterForm/>
+        </>
     )
 }
 

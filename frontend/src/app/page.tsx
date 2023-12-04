@@ -1,8 +1,13 @@
+import HomeForm from "@/app/home/homeForm"
+import Header from "@/components/header"
 
 
-const Home = () => {
+const Home = () => {    
   return(
-      <h1>Teste Home</h1>
+    <>     
+      <Header location='login'/>
+      <HomeForm/>
+    </>
   )
 }
 
