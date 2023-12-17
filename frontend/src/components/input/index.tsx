@@ -1,3 +1,5 @@
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ForwardedRef, InputHTMLAttributes, forwardRef, useState } from "react"
 import { FieldError } from "react-hook-form";
 
@@ -31,11 +33,15 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     return (
         <>  
             {label ? (
-                <fieldset className="flex flex-col space-y-2">
+                <fieldset className="flex flex-col space-y-2 w-full">
                     <label htmlFor={label} className="font-bold">{label}</label> 
-                    <input className="box-border p-2 border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
-                    {error ? <p>{error.message}</p> : null}  
-                    {showbutton ? <span onClick={() => hide()}>show</span> : null}          
+                    <div className="flex w-full border-box items-center space-x-1">
+                        <div className="flex flex-col space-y-2 w-full">
+                            <input className="box-border p-2 border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
+                            {error ? <p className="text-red-300 text-xs font-sm">{error.message}</p> : null}  
+                        </div>
+                        {showbutton ? <FontAwesomeIcon icon={faEye} onClick={() => hide()}/> : null}    
+                    </div>
                 </fieldset>
             ) : (
                 <fieldset>

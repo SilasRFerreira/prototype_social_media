@@ -16,8 +16,8 @@ const RegisterForm = () => {
 
   return (
     <>
-    <form onSubmit={handleSubmit(submit)}>
-      <div>
+    <form onSubmit={handleSubmit(submit)} className="py-4 flex flex-col space-y-8 my-12 box-border w-96 max-sm:w-72 border-solid border-gray-3 border-2 rounded-lg shadow-lg shadow-gray-3 bg-gray-5">
+      <div className="flex flex-col space-y-6 p-4">
       <Input
         label='Nome'
         type='text'
@@ -70,10 +70,10 @@ const RegisterForm = () => {
         error={errors.img_url} 
       />
       </div>
-      <div>
-        <button>Cadastrar</button>
-        <p>ou</p>
-        <Link href={'/'}>Faça login</Link>
+      <div className="flex flex-col space-y-6 text-center items-center">
+        <button className="mt-12 text-white bg-brand-1 hover:bg-brand-2 py-1 w-4/5 rounded rounded border-solid border-2 border-brand-1 hover:border-brand-2">Cadastrar</button>
+        <p className="text-sm">ou</p>
+        <Link href={'/'} className="mt-12 hover:text-gray-5 hover:bg-gray-2 bg-gray-4 text-gray-2 py-1 w-4/5 rounded border-solid border-2 border-gray-2 hover:border-gray-5">Faça login</Link>
       </div>
     </form> 
     </> 

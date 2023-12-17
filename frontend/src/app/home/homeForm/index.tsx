@@ -15,7 +15,7 @@ const HomeForm = () => {
   }   
   
   return(
-      <form onSubmit={handleSubmit(submit)} className="flex flex-col space-y-8 my-20 box-border w-96 max-sm:w-72 p-8 border-solid border-gray-3 border-2 rounded shadow-lg shadow-gray-3">  
+      <form onSubmit={handleSubmit(submit)} className="flex flex-col space-y-8 my-12 box-border w-96 max-sm:w-72 p-8 border-solid border-gray-3 border-2 rounded-lg shadow-lg shadow-gray-3 bg-gray-5">  
         <div className="flex flex-col space-y-6">      
           <Input 
             label='Email' 
