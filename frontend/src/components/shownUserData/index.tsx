@@ -2,11 +2,13 @@ const ShownUserData = () => {
     
     return (
         <div >
-            <img src="" alt="foto do usuário"/>
             <div>
-              <h2>Username</h2>
-              <span >User Description</span>
-            </div>          
+            <img src={''} alt="Foto de perfil utilizada pelo usuário" />
+            <div>
+                <h2>Nome do usuário</h2>
+                <p>Stack</p>
+            </div>
+        </div>        
         </div>
     )
 }
