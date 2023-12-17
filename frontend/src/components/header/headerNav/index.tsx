@@ -1,6 +1,9 @@
 import Link from "next/link"
 import { iHeader } from ".."
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons"
+
 const HeaderNav = ({location}: iHeader) => {
     const headerLocation = () => {
         if (location === 'login') {
@@ -13,7 +16,11 @@ const HeaderNav = ({location}: iHeader) => {
             )
         } else {
             return (
-                <Link href={'/'}>Logout</Link>
+                <>
+                    <a href={'/'} className="h-16 w-16">
+                        <FontAwesomeIcon icon={faRightFromBracket}/>
+                    </a>
+                </>
             )
         }
     }    
