@@ -31,9 +31,9 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     return (
         <>  
             {label ? (
-                <fieldset>
-                    <label htmlFor={label}>{label}</label> 
-                    <input type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
+                <fieldset className="flex flex-col space-y-2">
+                    <label htmlFor={label} className="font-bold">{label}</label> 
+                    <input className="box-border p-2 border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
                     {error ? <p>{error.message}</p> : null}  
                     {showbutton ? <span onClick={() => hide()}>show</span> : null}          
                 </fieldset>

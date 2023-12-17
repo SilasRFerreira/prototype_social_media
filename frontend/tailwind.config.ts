@@ -23,7 +23,7 @@ const config: Config = {
         'gray-4': '#dee2e6',
         'gray-5': '#f8f9fa',
         'like': '#d7443e',
-      }
+      },
     },
   },
   plugins: [],
