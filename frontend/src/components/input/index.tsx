@@ -45,8 +45,13 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
                 </fieldset>
             ) : (
                 <fieldset>
-                    <input type={type}  placeholder={placeholder} ref={ref} {...rest}/>
-                    {error ? <p>{error.message}</p> : null}
+                    <div className="flex flex-col w-full border-box items-center space-y-2">
+                        <div className="flex w-full items-center space-x-1">
+                            <input className="box-border p-2 w-full border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
+                            {showbutton ? <FontAwesomeIcon icon={faEye} onClick={() => hide()}/> : null}    
+                        </div>
+                        {error ? <p className="text-red-300 text-xs font-sm self-end">{error.message}</p> : null}  
+                    </div>
                 </fieldset>
             )}
         </>
