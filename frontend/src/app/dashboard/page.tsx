@@ -7,10 +7,10 @@ const Dashboard = () => {
         <>
             <Header/>
             <main className="">
-                <div className="my-12 mx-auto w-11/12 md:w-3/4">
+                <div className="my-12 mx-auto w-11/12">
                     <TopSection/>
                     <BottomSection/>
-                </div>
+                </div>                
             </main>
         </>
     )
