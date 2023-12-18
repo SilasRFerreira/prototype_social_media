@@ -1,10 +1,15 @@
+import ShownUserData from "../shownUserData"
+
 const PostCard = ({post}: any) => {
     return(
-        <li>
-            <h3>{post.user}</h3>
-            <p>{post.stack}</p>
-            <h2>{post.title}</h2>
+        <li className="flex flex-col gap-6 max-w-[700px]">
+            <ShownUserData/>
+            <h2 className="text-xl font-bold">{post.title}</h2>
             <p>{post.text}</p>
+            <div className="flex gap-12">
+                <button className="p-1 px-2 text-gray-5 bg-gray-1 hover:text-gray-1 hover:bg-gray-5 border border-solid border-gray-1 hover:border-gray-1 rounded">Abrir post</button>
+                <button>like</button>
+            </div>
         </li>
     )
 }
