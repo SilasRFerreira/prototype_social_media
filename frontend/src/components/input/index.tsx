@@ -40,7 +40,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
                             <input className="box-border p-2 w-full border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
                             {showbutton ? <FontAwesomeIcon icon={faEye} onClick={() => hide()}/> : null}    
                         </div>
-                        {error ? <p className="text-red-300 text-xs font-sm">{error.message}</p> : null}  
+                        {error ? <p className="text-red-300 text-xs font-sm self-end">{error.message}</p> : null}  
                     </div>
                 </fieldset>
             ) : (

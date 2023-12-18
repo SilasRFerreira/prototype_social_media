@@ -12,7 +12,7 @@ const HeaderNav = ({location}: iHeader) => {
             )       
         } else if (location === 'register') {
             return (
-                <Link href={'/'}>Login</Link>
+                <Link href={'/'} className="hover:font-bold">Login</Link>
             )
         } else {
             return (
