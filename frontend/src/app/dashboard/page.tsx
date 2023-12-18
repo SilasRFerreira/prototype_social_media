@@ -7,8 +7,10 @@ const Dashboard = () => {
         <>
             <Header/>
             <main className="">
-                <TopSection/>
-                <BottomSection/>
+                <div className="my-12 mx-auto w-11/12 md:w-3/4">
+                    <TopSection/>
+                    <BottomSection/>
+                </div>
             </main>
         </>
     )

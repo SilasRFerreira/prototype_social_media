@@ -8,7 +8,7 @@ const ShownUserData = () => {
 
 
     return (
-        <div className='flex space-x-4'>
+        <div className='flex flex-wrap space-x-4'>
             <Image src={imagem} alt={'profile picture'} className='h-16 w-16 rounded-full'/>            
             <div className='flex flex-col justify-evenly'>
                 <h2 className='text-2xl font-bold'>Silas Ferreira</h2>
