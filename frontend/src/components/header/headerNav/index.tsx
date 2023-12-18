@@ -8,11 +8,11 @@ const HeaderNav = ({location}: iHeader) => {
     const headerLocation = () => {
         if (location === 'login') {
             return (
-                <Link href={'/register'}>Cadastre-se</Link>
+                <Link href={'/register'} className="hover:font-bold">Cadastre-se</Link>
             )       
         } else if (location === 'register') {
             return (
-                <Link href={'/'}>Login</Link>
+                <Link href={'/'} className="hover:font-bold">Login</Link>
             )
         } else {
             return (
