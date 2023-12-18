@@ -35,12 +35,12 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
             {label ? (
                 <fieldset className="flex flex-col space-y-2 w-full">
                     <label htmlFor={label} className="font-bold">{label}</label> 
-                    <div className="flex w-full border-box items-center space-x-1">
-                        <div className="flex flex-col space-y-2 w-full">
-                            <input className="box-border p-2 border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
-                            {error ? <p className="text-red-300 text-xs font-sm">{error.message}</p> : null}  
+                    <div className="flex flex-col w-full border-box items-center space-y-2">
+                        <div className="flex w-full items-center space-x-1">
+                            <input className="box-border p-2 w-full border-solid border-2 border-gray-4 rounded" type={passwordInputType} placeholder={placeholder} id={label} ref={ref} {...rest}/>
+                            {showbutton ? <FontAwesomeIcon icon={faEye} onClick={() => hide()}/> : null}    
                         </div>
-                        {showbutton ? <FontAwesomeIcon icon={faEye} onClick={() => hide()}/> : null}    
+                        {error ? <p className="text-red-300 text-xs font-sm">{error.message}</p> : null}  
                     </div>
                 </fieldset>
             ) : (

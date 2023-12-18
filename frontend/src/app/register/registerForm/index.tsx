@@ -71,7 +71,7 @@ const RegisterForm = () => {
       />
       </div>
       <div className="flex flex-col space-y-6 text-center items-center">
-        <button className="mt-12 text-white bg-brand-1 hover:bg-brand-2 py-1 w-4/5 rounded rounded border-solid border-2 border-brand-1 hover:border-brand-2">Cadastrar</button>
+        <button className="mt-8 text-white bg-brand-1 hover:bg-brand-2 py-1 w-4/5 rounded rounded border-solid border-2 border-brand-1 hover:border-brand-2">Cadastrar</button>
         <p className="text-sm">ou</p>
         <Link href={'/'} className="mt-12 hover:text-gray-5 hover:bg-gray-2 bg-gray-4 text-gray-2 py-1 w-4/5 rounded border-solid border-2 border-gray-2 hover:border-gray-5">Faça login</Link>
       </div>
