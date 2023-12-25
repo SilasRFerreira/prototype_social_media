@@ -14,10 +14,10 @@ export const RegisterSchame = z.object({
     password: z
         .string()
         .nonempty('campo obrigatório')
-        .min(6, "É necessário pelo menos seis caracteres.")
-        .regex(/(?=.*?[A-Z])/, "É necessário pelo menos uma letra maiúscula")
-        .regex(/(?=.*?[a-z])/, "É necessário pelo menos uma letra minúscula")
-        .regex(/(?=.*?[0-9])/, "É necessário pelo menos um número."),
+        .min(6, "É necessário ao menos seis caracteres.")
+        .regex(/(?=.*?[A-Z])/, "É necessário ao menos uma letra maiúscula")
+        .regex(/(?=.*?[a-z])/, "É necessário ao menos uma letra minúscula")
+        .regex(/(?=.*?[0-9])/, "É necessário ao menos um número."),
     password_confirmation: z
         .string()
         .nonempty('campo obrigatório'),
